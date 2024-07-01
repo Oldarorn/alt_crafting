@@ -1,5 +1,3 @@
----
-
 # Altered Crafting
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
@@ -31,7 +29,7 @@ Altered Crafting is a FiveM resource designed to create crafting points, define 
 
 1. Clone the repository or download the latest release.
    ```sh
-   git clone https://github.com/yourusername/alt_crafting.git
+   git clone https://github.com/oldarorn/alt_crafting.git
    ```
 2. Ensure you have [ox_lib](https://github.com/overextended/ox_lib) installed.
 3. Add `alt_crafting` to your FiveM server resources.
@@ -39,7 +37,8 @@ Altered Crafting is a FiveM resource designed to create crafting points, define 
 
 ## Configuration
 
-WIP
+1. Take a look at `shared` folder
+2. Save your changes and restart your server.
 
 ## Usage
 
@@ -51,13 +50,12 @@ WIP
 Contributions are welcome! Please fork this repository, make your changes, and submit a pull request. For major changes, please open an issue first to discuss what you would like to change.
 
 1. Fork the Project.
-2. Create your Feature Branch (`git checkout -b feature/YourFeature`).
-3. Commit your Changes (`git commit -m 'Add some YourFeature'`).
-4. Push to the Branch (`git push origin feature/YourFeature`).
+2. Create your Feature Branch (git checkout -b feature/YourFeature).
+3. Commit your Changes (git commit -m 'Add some YourFeature').
+4. Push to the Branch (git push origin feature/YourFeature).
 5. Open a Pull Request.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/Oldarorn/alt_crafting/blob/main/LICENSE) file for details.
 
----
