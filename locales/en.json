@@ -1,0 +1,4 @@
+{
+    "location_command_help": "Allows the creation of a new crafting location",
+    "craft_command_help": "Allows the creation of a new crafting recipe"
+}

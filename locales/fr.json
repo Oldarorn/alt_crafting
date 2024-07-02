@@ -1,3 +1,4 @@
 {
-    
+    "location_command_help": "Permet la création d'un nouvel emplacement de craft",
+    "craft_command_help": "Permet la création d'une nouvelle recette de craft"
 }
