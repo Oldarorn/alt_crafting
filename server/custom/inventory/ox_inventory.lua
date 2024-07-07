@@ -8,7 +8,7 @@ local function initializeItemNames()
     local itemsList = {}
     
     for item, data in pairs(items) do
-        table.insert(itemsList, {value = item, label = string.format("%s (%s)", data.label, item)})
+        table.insert(itemsList, {value = item, label = data.label})
     end
     
     local index = 1

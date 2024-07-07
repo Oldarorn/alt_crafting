@@ -1,4 +1,24 @@
 {
     "location_command_help": "Permet la création d'un nouvel emplacement de craft",
-    "craft_command_help": "Permet la création d'une nouvelle recette de craft"
+    "craft_command_help": "Permet la création d'une nouvelle recette de craft",
+
+    "recipe_header": "Créateur de recette",
+    "recipe_item_name": "Objet à créer",
+    "recipe_craft_time": "Temps de craft (en secondes)",
+    "recipe_craft_qty": "Quantité à obtenir",
+    "recipe_ingredients_qty": "Combien d'items sont requis pour la recette",
+    "recipe_craft_perfect_qty": "Quantité obtenue si parfaite",
+    "recipe_perfect_desc": "Dans le cas où vous souhaitez récompenser les joueurs lorsqu'ils apportent la quantité exacte d'ingrédients pour la réalisation",
+    "recipe_craft_durability": "Est-ce que l'objet aura une durabilité variable ?",
+
+    "recipe_durability": "Durabilité de l'item",
+
+    "recipe_ingredients": "Liste des ingrédients",
+    "recipe_ingredient_min_requiredqty": "Quantité minimum requise pour l'ingrédient %s",
+    "recipe_ingredient_max_requiredqty": "Quantité maximum requise pour l'ingrédient %s",
+    "recipe_min_durability": "Durabilité minimum",
+    "recipe_max_durability": "Durabilité maximum",
+
+    "error_item_already_exists": "Cette recette existe déjà !",
+    "success_item_created": "Recette créée avec succès !"
 }

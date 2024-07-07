@@ -1,4 +1,24 @@
 {
     "location_command_help": "Allows the creation of a new crafting location",
-    "craft_command_help": "Allows the creation of a new crafting recipe"
+    "craft_command_help": "Allows the creation of a new crafting recipe",
+
+    "recipe_header": "Craft creator",
+    "recipe_item_name": "Item to craft",
+    "recipe_craft_time": "Time to craft (seconds)",
+    "recipe_craft_qty": "Quantity to get",
+    "recipe_ingredients_qty": "How many ingredients are required",
+    "recipe_craft_perfect_qty": "Quantity to get if perfect",
+    "recipe_perfect_desc": "In case you want to reward players when they bring the exact quantity of ingredients to make it",
+    "recipe_craft_durability": "Will the item have variable durability?",
+
+    "recipe_durability": "Item's durability",
+
+    "recipe_ingredients": "Ingredients list",
+    "recipe_ingredient_min_requiredqty": "Required minimum quantity for ingredient %s",
+    "recipe_ingredient_max_requiredqty": "Required maximum quantity for ingredient %s",
+    "recipe_min_durability": "Minimum durability",
+    "recipe_max_durability": "Maximum durability",
+
+    "error_item_already_exists": "This recipe already exists !",
+    "success_item_created": "Recipe successfully created !"
 }
