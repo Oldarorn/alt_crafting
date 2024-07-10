@@ -20,5 +20,9 @@
     "recipe_max_durability": "Durabilité maximum",
 
     "error_item_already_exists": "Cette recette existe déjà !",
-    "success_item_created": "Recette créée avec succès !"
+    "success_item_created": "Recette créée avec succès !",
+
+    "cooking_cat" : "Cuisine",
+    "drinks_cat": "Boissons",
+    "misc_cat": "Divers"
 }

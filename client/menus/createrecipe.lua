@@ -12,6 +12,7 @@ AddEventHandler('alt_crafting:createCraft', function(itemsTable)
         {type = 'slider', label = locale('recipe_ingredients_qty'), default = 1, min = 1, max = Config.MaxIngredientList, required = true},
         {type = 'number', label = locale('recipe_craft_perfect_qty'), default = 0, description = locale('recipe_perfect_desc')},
         {type = 'checkbox', label = locale('recipe_craft_durability'), checked = false},
+        {type = 'select', label = locale('recipe_category'), options = Config.Categories, searchable = true, required = true},
     }
 
     -- Display input dialog for initial options
@@ -19,7 +20,7 @@ AddEventHandler('alt_crafting:createCraft', function(itemsTable)
     if not settingCraft then return end
 
     -- Extract values from initial options
-    local itemName, craftTime, craftQty, ingredientsQty, perfectQty, craftDurability = table.unpack(settingCraft)
+    local itemName, craftTime, craftQty, ingredientsQty, perfectQty, craftDurability, recipeCategory = table.unpack(settingCraft)
 
     -- Print selected values for verification
     print(string.format("Item to craft: ^2%s^7 | Time to craft: ^2%d seconds^7 | Quantity to get: x^2%d^7 | Required Items: ^2%d^7 | Perfect craft reward: x^2%d",
@@ -31,6 +32,7 @@ AddEventHandler('alt_crafting:createCraft', function(itemsTable)
         time = craftTime,
         qty = craftQty,
         perfectQty = math.max(perfectQty, craftQty),
+        category = recipeCategory
     }
 
     -- Handle durability if enabled
