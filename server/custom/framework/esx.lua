@@ -25,3 +25,7 @@ end
 function GetPlayerSource(player)
     return player?.source
 end
+
+function GetJobs()
+    return ESX.GetJobs()
+end

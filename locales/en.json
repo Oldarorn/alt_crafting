@@ -22,6 +22,22 @@
     "error_item_already_exists": "This recipe already exists !",
     "success_item_created": "Recipe successfully created !",
 
+    "generic_error": "ERRROR",
+    "zone_no_craft": "There is no crafting recipe to integrate.",
+    "create_zone_header": "Creation Area",
+    "create_zone_id": "Zone ID",
+    "create_zone_id_desc": "Makes it easier to find the zone",
+    "authorized_groups": "Authorized Group(s)",
+    "marker_color": "Marker Color",
+    "display_marker": "Display Marker?",
+    "possible_crafts": "Possible Crafts",
+    "notification_text": "Notification Text",
+    "notification_text_desc": "YOURTEXT",
+    "use_input_context": "Use ~INPUT_CONTEXT~",
+
+    "zone_created": "The zone %s has been created successfully.",
+
+    "recipe_category": "Recipe's category",
     "cooking_cat": "Cooking",
     "drinks_cat": "Drinks",
     "misc_cat": "Miscellaneous"

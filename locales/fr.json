@@ -22,6 +22,22 @@
     "error_item_already_exists": "Cette recette existe déjà !",
     "success_item_created": "Recette créée avec succès !",
 
+    "generic_error": "ERREUR",
+    "zone_no_craft": "Il n'existe aucune recette de craft à intégrer",
+    "create_zone_header": "Zone de création",
+    "create_zone_id": "ID de la zone",
+    "create_zone_id_desc": "Permet de retrouver la zone plus facilement",
+    "authorized_groups": "Groupe(s) autorisé(s)",
+    "marker_color": "Couleur du marker",
+    "display_marker": "Afficher le marker ?",
+    "possible_crafts": "Crafts possibles",
+    "notification_text": "Texte de notification",
+    "notification_text_desc": "VOTRETEXTE",
+    "use_input_context": "Ajouter ~INPUT_CONTEXT~",
+
+    "zone_created": "La zone %s a été créée avec succès",
+
+    "recipe_category": "Catégorie de la recette",
     "cooking_cat" : "Cuisine",
     "drinks_cat": "Boissons",
     "misc_cat": "Divers"

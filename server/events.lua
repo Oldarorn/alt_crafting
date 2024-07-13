@@ -27,3 +27,40 @@ AddEventHandler('alt_crafting:createItem', function(itemTable)
     -- Optionally, notify the client that the item was successfully created
     TriggerClientEvent('ox_lib:notify', _source, {type="success", description = locale('success_item_created')})
 end)
+
+RegisterNetEvent('alt_crafting:addNewZone')
+AddEventHandler('alt_crafting:addNewZone', function(zoneTable)
+    local filePath = './datas/locations.json'
+    local file = LoadResourceFile(GetCurrentResourceName(), filePath)
+    local locData = json.decode(file)
+    
+    local red, green, blue, alpha = zoneTable.colours:match("rgba%((%d+),%s*(%d+),%s*(%d+),%s*([%d.]+)%)")
+    local convertAlpha = math.floor(alpha * 255 + 0.5)
+
+    local function createZone(id)
+        locData[id] = {
+            coords = zoneTable.coords,
+            groups = zoneTable.groups,
+            showMarker = zoneTable.showMarker,
+            colours = {r = tonumber(red), g = tonumber(green), b = tonumber(blue), a = tonumber(convertAlpha)},
+            crafts = zoneTable.crafts,
+            uiText = zoneTable.uiText
+        }
+        TriggerClientEvent('ox_lib:notify', source, {type = "success", icon = "screwdriver-wrench", description = locale('zone_created', id)})
+    end
+
+    if not locData[zoneTable.id] then
+        createZone(zoneTable.id)
+    else
+        local newId
+        repeat
+            local i = math.random(1111, 9999)
+            newId = zoneTable.id .. i
+        until not locData[newId]
+
+        createZone(newId)
+    end
+
+    local newJson = json.encode(locData, {indent = true})
+    SaveResourceFile(GetCurrentResourceName(), filePath, newJson, -1)
+end)
