@@ -12,3 +12,11 @@ lib.callback.register('alt_crafting:getCraftList', function(source)
     
     return items
 end)
+
+lib.callback.register('alt_crafting:requestLocations', function(source)
+    local filePath = './datas/locations.json'
+    local file = LoadResourceFile(GetCurrentResourceName(), filePath)
+    local locData = json.decode(file)
+
+    return locData
+end)

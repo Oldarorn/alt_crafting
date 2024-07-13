@@ -39,7 +39,7 @@ AddEventHandler('alt_crafting:addNewZone', function(zoneTable)
 
     local function createZone(id)
         locData[id] = {
-            coords = zoneTable.coords,
+            coords = vec3(zoneTable.coords.x, zoneTable.coords.y, zoneTable.coords.z - 1.0),
             groups = zoneTable.groups,
             showMarker = zoneTable.showMarker,
             colours = {r = tonumber(red), g = tonumber(green), b = tonumber(blue), a = tonumber(convertAlpha)},
@@ -63,4 +63,5 @@ AddEventHandler('alt_crafting:addNewZone', function(zoneTable)
 
     local newJson = json.encode(locData, {indent = true})
     SaveResourceFile(GetCurrentResourceName(), filePath, newJson, -1)
+    TriggerClientEvent('alt_crafting:refreshZones', -1)
 end)

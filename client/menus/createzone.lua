@@ -14,15 +14,11 @@ AddEventHandler('alt_crafting:createZone', function(jobs)
         {type = 'checkbox', label = locale('display_marker'), checked = true},
         {type = 'multi-select', label = locale('possible_crafts'), searchable = true, options = items, required = true},
         {type = 'input', label = locale('notification_text'), description = locale('notification_text_desc'), required = true},
-        {type = 'checkbox', label = locale('use_input_context'), checked = true},
     })
 
     if not creator then return end
 
-    local uiText = creator[6]
-    if creator[7] then
-        uiText = "~INPUT_CONTEXT~ - " .. uiText
-    end
+    local uiText = '[E] - ' .. creator[6]
 
     local newLoc = {
         coords = pos,

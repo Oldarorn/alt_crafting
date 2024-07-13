@@ -6,3 +6,12 @@ function getLabelFromData(table, dataValue)
     end
     return nil
 end
+
+function checkArray (tab, val)
+	for index, value in ipairs(tab) do
+			if value == val then
+					return true
+			end
+	end
+	return false
+end
